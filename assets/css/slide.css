@@ -1,0 +1,64 @@
+.section.section2 .slideshow-container{
+    max-width: 100%;
+    position: relative;
+}
+.section.section2 .slideshow-container .mySlides{
+    display: none;
+}
+.section.section2 .slideshow-container .prev,.section.section2 .slideshow-container .next{
+    padding: 5px 10px ;
+    position: absolute;
+    top: 50%;
+    color: #fff;
+    cursor: pointer;
+    font-size: 25px;
+    font-weight: 500;
+    border-radius: 100%;
+    transition: 0.6s ease;
+    display: none;
+}
+.section.section2 .slideshow-container .next{
+    right: 0;
+    margin-right: 20px;
+}
+.section.section2 .slideshow-container .prev{
+    margin-left: 20px;
+}
+.section.section2 .slideshow-container .prev:hover,.section.section2 .slideshow-container .next:hover{
+    background-color: tomato;
+}
+.section.section2 .slideshow-container .dots{
+    position: absolute;
+    width: 200px;
+    top:95%;
+    right: 37%;
+}
+.section.section2 .slideshow-container .dot{
+    cursor: pointer;
+    height: 10px;
+    width: 10px;
+    margin: 0 5px;
+    border: 2px solid #fff;
+    border-radius: 100%;
+    display: inline-block;
+}
+.active1{
+    background-color: #fff;
+}
+.section.section2 .slideshow-container .fade{
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 3.5s;
+    animation-name: fade;
+    animation-duration: 3.5s;
+}
+@-webkit-keyframes fade {
+    from{opacity: 0.4}
+    to{opacity: 1}
+}
+@keyframes fade{
+    from{opacity: 0.4}
+    to{opacity: 1}
+}
+
+
+
